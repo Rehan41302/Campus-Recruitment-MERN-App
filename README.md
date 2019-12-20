@@ -1,4 +1,4 @@
-##App Instructions
+## App Instructions
 
 TO RUN THE PROJECT,, RUN THESE COMMANDS ON CMD IN ROOT FOLDER
 
