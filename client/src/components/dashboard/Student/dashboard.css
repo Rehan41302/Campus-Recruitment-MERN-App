@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+thead{
+    background-color:#0069D9;
+    color: white;
+}
+.header{
+    color: white;
+    font-size: 20px;
+
+}
+.b1{
+     margin-left: 50%;
+ }
+
+body{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Acme', sans-serif;
+
+}
+.hh{
+    color: white;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+.card{
+    font-size: 15px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.ct{
+    margin-bottom: 10%;
+}
+.header1{
+    margin-left: 50%;
+}
+.Btn1{
+    background-color: red;
+}

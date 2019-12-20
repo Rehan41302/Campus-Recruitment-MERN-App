@@ -1,0 +1,15 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.crd{
+    background-color: hsla(187, 100%, 40%,0.5)
+}
+.b1{
+    background: white;
+    color: hsla(187, 100%, 40%,1)
+}
+.ct{
+    color: hsla(187, 100%, 40%,1)
+}
+.ctx{
+    color: hsla(187, 100%, 40%,1) ;
+    font-size: 50px;
+}
