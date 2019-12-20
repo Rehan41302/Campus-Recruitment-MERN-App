@@ -5,3 +5,6 @@ npm install && npm run client-install
 AFTER INSTALLATION, RUN THIS COMMAND,,
 
 npm run dev
+
+
+Note: Project is not completed yet.
