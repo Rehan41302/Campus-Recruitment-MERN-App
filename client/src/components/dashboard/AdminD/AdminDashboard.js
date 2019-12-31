@@ -100,7 +100,7 @@ class Admin extends React.Component{
         // console.log('Date: ',new Date())
         
         return(
-            <div>
+            <div className='center-align'>
                 <Container>
                 <br/>
                 <br/>

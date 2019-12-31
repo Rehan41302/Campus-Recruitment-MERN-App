@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
+import {Button, Form } from 'react-bootstrap'
 class Login extends Component {
   constructor() {
     super();
@@ -58,9 +59,11 @@ return (
                 Don't have an account? <Link to="/register">Register</Link>
               </p>
             </div>
-            <form noValidate onSubmit={this.onSubmit}>
-              <div className="input-field col s12">
-                <input
+           
+              <Form  noValidate onSubmit={this.onSubmit}>
+                <Form.Group controlId="email">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control 
                   onChange={this.onChange}
                   value={this.state.email}
                   error={errors.email}
@@ -69,15 +72,20 @@ return (
                   className={classnames("", {
                     invalid: errors.email || errors.emailnotfound
                   })}
-                />
-                <label htmlFor="email">Email</label>
-                <span className="red-text">
+                  placeholder="Enter email" />
+                  <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+                  </Form.Text>
+                  <Form.Text style={{color:'red'}}>
                   {errors.email}
                   {errors.emailnotfound}
-                </span>
-              </div>
-              <div className="input-field col s12">
-                <input
+                  </Form.Text>
+                  
+                </Form.Group>
+
+                <Form.Group controlId="password">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control  
                   onChange={this.onChange}
                   value={this.state.password}
                   error={errors.password}
@@ -86,28 +94,23 @@ return (
                   className={classnames("", {
                     invalid: errors.password || errors.passwordincorrect
                   })}
-                />
-                <label htmlFor="password">Password</label>
-                <span className="red-text">
-                  {errors.password}
+                  placeholder="Password" />
+                </Form.Group>
+                <Form.Text style={{color:'red'}}>
+                {errors.password}
                   {errors.passwordincorrect}
-                </span>
+                  </Form.Text>
+                  <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+                <Button variant="primary" type="submit">
+                Submit
+              </Button>
+                
+              
               </div>
-              <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-                <button
-                  style={{
-                    width: "150px",
-                    borderRadius: "3px",
-                    letterSpacing: "1.5px",
-                    marginTop: "1rem"
-                  }}
-                  type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-                >
-                  Login
-                </button>
-              </div>
-            </form>
+            
+              
+              </Form>
+               
           </div>
         </div>
       </div>

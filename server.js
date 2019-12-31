@@ -8,7 +8,7 @@ const company = require("./routes/api/company");
 const allStudents = require("./routes/api/allStudents");
 const allJobs = require("./routes/api/allJobs");
 const deleteUser = require("./routes/api/delete");
-// const path= require('path')
+const path= require('path')
 const app = express();
 // /*Adds the react production build to serve react requests*/
 // app.use(express.static(path.join(__dirname, "./client/build")));
@@ -16,6 +16,12 @@ const app = express();
 // app.get("*", (req, res) => {
 // res.sendFile(path.join(__dirname + "./client/build/index.html"));
 // });
+/*Adds the react production build to serve react requests*/
+app.use(express.static(path.join(__dirname, "./client/build")));
+/*React root*/
+app.get("*", (req, res) => {
+res.sendFile(path.join(__dirname + "./client/build/index.html"));
+});
 
 
 // Bodyparser middleware

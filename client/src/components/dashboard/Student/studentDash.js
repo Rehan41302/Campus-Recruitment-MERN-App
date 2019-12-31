@@ -171,9 +171,7 @@ class Student extends React.Component{
                 </Row>   
               </Container>   
               <br/>
-              <a href="/Koala.jpg" download>
-  <img src={img} alt="Koala" width="104" height="142"/>
-</a>
+              
 
                   <br/>
                   <br/>                 

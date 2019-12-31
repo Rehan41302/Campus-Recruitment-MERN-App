@@ -6,6 +6,7 @@ import { logoutUser } from "../../actions/authActions";
 import Student from './Student/studentDash';
 import Admin from './AdminD/AdminDashboard';
 import Company from './Company/companyDash';
+import{Button} from 'react-bootstrap'
 
 class Dashboard extends Component {
   constructor(props){
@@ -85,8 +86,8 @@ return (
                 <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
               </p>
             </h4>
-            <button
-              style={{
+            
+            <Button variant="primary"style={{
                 width: "150px",
                 borderRadius: "3px",
                 letterSpacing: "1.5px",
@@ -96,7 +97,8 @@ return (
               className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >
               Logout
-            </button><br/>
+            </Button>
+            <br/>
          {(user.userType==='admin')?
             
             <Admin details={user} />
