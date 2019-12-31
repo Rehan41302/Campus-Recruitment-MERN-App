@@ -2,7 +2,9 @@
 
 TO RUN THE PROJECT,, RUN THESE COMMANDS ON CMD IN ROOT FOLDER
 
-`npm install && npm run client-install`
+`npm install`
+`cd client && npm install`
+`cd.. && npm run dev`
 
 AFTER INSTALLATION, RUN THIS COMMAND,,
 
